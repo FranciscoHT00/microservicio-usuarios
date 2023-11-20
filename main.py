@@ -71,5 +71,3 @@ async def eliminar_usuario(id_usuario: int, db: db_dependency):
     db.commit()
     return {"respuesta": "Usuario eliminado correctamente."}
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", port=8000, reload=True)
